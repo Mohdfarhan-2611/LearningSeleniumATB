@@ -17,5 +17,6 @@ public class Selenium006 {
         EdgeDriver driver = new EdgeDriver(edgeOptions);
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
+        System.out.println("Farhan");
     }
 }
