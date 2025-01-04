@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.*;
 
-public class Selenium_013_ProjectTask {
+public class Selenium_013_ProjectTask1 {
 
     @Test
     public void test_method02() throws InterruptedException {
