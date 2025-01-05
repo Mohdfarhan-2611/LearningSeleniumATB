@@ -23,6 +23,7 @@ public class Selenium015 {
 
         WebElement serachtext = driver.findElement(By.xpath("//input[@placeholder='Search for anything']"));
         serachtext.sendKeys("macmini");
+
         Thread.sleep(2000);
 
         WebElement searchbutton = driver.findElement(By.xpath("//input[@value='Search']"));
@@ -33,7 +34,7 @@ public class Selenium015 {
 
         int size = Math.min(titleList.size(),pricelist.size());
 
-        for(int i = 1; i<size; i++)
+        for(int i = 0; i<size; i++)
         {
             System.out.println(i + ":" + titleList.get(i).getText() + " || " + pricelist.get(i).getText() );
         }

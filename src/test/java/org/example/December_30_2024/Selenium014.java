@@ -34,20 +34,15 @@ public class Selenium014 {
         WebElement signinbutton = driver.findElement(By.xpath("//button[@id='frm-btn']"));
         signinbutton.click();
 
-        Thread.sleep(12000);
+        Thread.sleep(20000);
 
         WebElement sessionExpired = driver.findElement(By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']"));
-
+        System.out.println(sessionExpired.getText());
 
         //assertJ
         assertThat(sessionExpired.getText()).isNotBlank().isNotEmpty().isEqualTo("Your free trial has expired");
 
-
-
-
-
         driver.quit();
-
 
     }
 }
