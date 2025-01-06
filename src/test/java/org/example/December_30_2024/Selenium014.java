@@ -5,7 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class Selenium014 {
@@ -34,13 +40,15 @@ public class Selenium014 {
         WebElement signinbutton = driver.findElement(By.xpath("//button[@id='frm-btn']"));
         signinbutton.click();
 
-        Thread.sleep(20000);
-
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        //WebElement sessionExpired = driver.findElement(By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']")));
         WebElement sessionExpired = driver.findElement(By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']"));
         System.out.println(sessionExpired.getText());
 
+
         //assertJ
-        assertThat(sessionExpired.getText()).isNotBlank().isNotEmpty().isEqualTo("Your free trial has expired");
+       assertThat(sessionExpired.getText()).isNotBlank().isNotEmpty().isEqualTo("Your free trial has expired");
 
         driver.quit();
 

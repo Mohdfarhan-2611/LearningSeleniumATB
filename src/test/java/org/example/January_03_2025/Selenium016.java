@@ -37,7 +37,7 @@ public class Selenium016 {
 // js.executeScript("window.scrollBy(0,1000)")
 // js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
-        Thread.sleep(5000);
+
 
         WebElement submitbutton = driver.findElement(By.xpath("//button[text()='Submit']"));
         submitbutton.click();
