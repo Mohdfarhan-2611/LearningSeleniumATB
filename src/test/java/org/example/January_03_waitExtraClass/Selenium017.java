@@ -1,4 +1,4 @@
-package org.example.Januart_03_waitExtraClass;
+package org.example.January_03_waitExtraClass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
