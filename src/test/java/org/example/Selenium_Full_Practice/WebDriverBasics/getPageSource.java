@@ -1,29 +1,20 @@
 package org.example.Selenium_Full_Practice.WebDriverBasics;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class getPageSource {
 
-    @Test
-    public static void getPageSource() {
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://netflix.com");
-        System.out.println(driver.getPageSource());
-        String pageSource = driver.getPageSource();
-
-        if (pageSource.contains("Netflix"))
-        {
-            Assert.assertTrue(true);
-        }
-
-
+    public static void main(String[] args) {
+        WebDriver driver = new EdgeDriver();
+        driver.get("https://google.com");
+        String pagesource = driver.getPageSource();
+        System.out.println(pagesource);
         driver.quit();
+
+
+
+
+
     }
-
-
-
-
 }

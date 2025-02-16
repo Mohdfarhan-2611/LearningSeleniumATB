@@ -1,4 +1,4 @@
-package org.example.December_18_2024;
+package org.example.PromodClasses.December_18_2024;
 
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

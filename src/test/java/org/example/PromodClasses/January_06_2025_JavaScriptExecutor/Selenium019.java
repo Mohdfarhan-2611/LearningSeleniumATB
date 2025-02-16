@@ -1,4 +1,4 @@
-package org.example.January_06_2025_JavaScriptExecutor;
+package org.example.PromodClasses.January_06_2025_JavaScriptExecutor;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.edge.EdgeDriver;

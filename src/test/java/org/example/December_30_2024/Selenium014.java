@@ -1,6 +1,6 @@
 package org.example.December_30_2024;
 
-import org.example.WaitHelper;
+//import org.example.WaitHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.example.WaitHelper.checkVisibility;
+//import static org.example.WaitHelper.checkVisibility;
 
 public class Selenium014 {
 
@@ -42,7 +42,7 @@ public class Selenium014 {
 //       Explicit wait
 //       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 //       wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']")));
-        checkVisibility(driver, By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']") );
+//        checkVisibility(driver, By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']") );
         WebElement sessionExpired = driver.findElement(By.xpath("//div[@class='id-card-cont']/child:: h5[@class='id-card-title']"));
         System.out.println(sessionExpired.getText());
 

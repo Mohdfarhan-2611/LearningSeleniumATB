@@ -1,4 +1,4 @@
-package org.example.January_06_2025_Actions_Windows_iFrames;
+package org.example.PromodClasses.January_06_2025_Actions_Windows_iFrames;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

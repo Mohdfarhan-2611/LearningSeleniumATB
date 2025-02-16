@@ -1,4 +1,4 @@
-package org.example.January_03_2025;
+package org.example.PromodClasses.January_03_2025;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

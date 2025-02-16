@@ -1,4 +1,4 @@
-package org.example;
+package org.example.PromodClasses.December_30_2024;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

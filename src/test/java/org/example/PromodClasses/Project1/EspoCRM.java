@@ -1,4 +1,4 @@
-package org.example.Project1;
+package org.example.PromodClasses.Project1;
 
 import io.qameta.allure.Description;
 import net.bytebuddy.build.Plugin;
