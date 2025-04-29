@@ -19,6 +19,7 @@ public class contextClick {
         Actions actions = new Actions(driver);
 
         actions.moveToElement(myeBayelement).perform();
+        //Right click
         actions.contextClick(myeBayelement).perform();
 
         driver.quit();

@@ -1,12 +1,11 @@
 package org.example.Selenium_Full_Practice.JavaScriptExecutor;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class Concept1 {
+public class HighlightElement {
 
 
     public static void flash(WebElement element, WebDriver driver)

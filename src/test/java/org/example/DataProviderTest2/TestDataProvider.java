@@ -13,11 +13,11 @@ public class TestDataProvider {
 
 
 
-    @Test(dataProvider = "Test03")
-    public void testdataprovider(Object email, Object pass)
+    @Test(dataProvider = "Test02")
+    public void testdataprovider(Object email, Object password)
     {
-        System.out.println(email);
-        System.out.println(pass);
+        System.out.println(email + " "+ password);
+
     }
 
 
@@ -52,6 +52,7 @@ public class TestDataProvider {
         // Adding data sets to the list
         data.add(a1);
         data.add(a2);
+
         data.add(new Object[]{"John", "Maan"});
         data.add(new Object[]{"Jerry", "jon"});
 
